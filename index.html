@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+   <header>
+    <div class="user">
+        <img src="img/passport.jpg" alt="profile image">
+        <h3 class="name">Ayush Bajpai</h3>
+        <p class="position">Full stack developer intern</p>
+
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+            <li><a href="#contact">Contact me</a></li>
+            
+            
+        </ul>
+    </nav>
+
+   </header> 
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <section class="home" id="home">
+        <h3>Hi everyone!</h3>
+        <h1>Myself <span class="blink">Ayush Bajpai</span></h1>
+        <p>I am a full stack developer intern at zemoso technologies</p>
+        <div class="icon">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="https://www.linkedin.com/in/ayushbajpai47/" class="fa fa-linkedin"></a>
+    </div>
+        <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+    </section>
+    <section class="about" id="about">
+
+        <h1 class="heading"><span>about</span> me</h1>
+        <div class="row">
+            <div class="info">
+                <h3><span>name:</span>Ayush Bajpai</h3>
+                <h3><span>Age:</span>20</h3>
+                <h3><span>qualification :</span>B.tech</h3>
+                <h3><span>Hobbies</span>Playing cricket, reading tech articles</h3>
+                <h3><span>Languages</span>Hindi,english</h3>
+            </div>
+        <div class="counter">
+            <div class="box">
+             <span>6+</span>
+             <h3>months of experience</h3>
+
+           </div>
+            <div class="box">
+                <span>3+</span>
+                <h3>projects</h3>
+                
+            </div>
+            <div class="box">
+                
+                <span>Skills</span>
+                <h3>HTML,CSS </h3>
+                
+            </div>
+
+         </div>    
+        </div>
+         <div class="education">
+            <h1 class="heading">education</h1>
+            <div class="timeline">
+                <div class="timeline-box">
+                   
+                    <img src="https://previews.123rf.com/images/captainvector/captainvector1703/captainvector170309311/74165534-college-logo-element.jpg" alt="">
+                    <h3>
+                        Btech from RR Institute of modern technology
+                    </h3>  
+                </div>
+                <div class="timeline-box">
+                    <img src="https://previews.123rf.com/images/captainvector/captainvector1703/captainvector170309311/74165534-college-logo-element.jpg" alt="">
+                    <h3>
+                       12th from brightland inter college
+                    </h3>  
+                </div>
+                <div class="timeline-box">
+                    <img src="https://previews.123rf.com/images/captainvector/captainvector1703/captainvector170309311/74165534-college-logo-element.jpg" alt="">
+                    <h3>
+                       10th from brightland inter college
+                    </h3> 
+                </div>
+                <div class="timeline-divider">
+                    <div class="timeline-traveller">
+                        <i class="fas fa-plane fa-5x"></i>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+            
+        </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <h1 class="heading">Gallery</h1>
+        <ul class="gallery_list">
+            <li><img src="https://unsplash.it/300/300" width="200">
+              <p>image #1</p></li>
+            <li><img src="https://unsplash.it/400/400" width="200"/>
+              <p>image #2</p></li>
+            <li><img src="https://unsplash.it/500/500" width="200"/>
+              <p>image #3</p></li>
+            <li><img src="https://unsplash.it/200/200" width="200"/>
+              <p>image #4</p></li>
+            
+
+          </ul>
+         
+    </section>
+    <section class="contact" id="contact">
+        <h3 class="heading">Contact ME 📞</h3>
+
+        <div class="container">
+          <form action="mailto:vikkabajpai@gmail.com" method="get" enctype="text/plain" onSubmit="alert('Thank you for your feedback.');">
+            <label for="fname">Full Name 👱‍</label>
+            <input  type="text" id="fname" name="firstname" placeholder="Your name.."required>
+             
+             <label for="emailid">Email Id 📧</label>
+             <input name="email" type="text" class="feedback-input" pattern="^[a-zA-Z0-9_.+-]+@gmail.com$" placeholder="Email" required/>
+             <label for="phone">Phone number 🎧</label>
+             <input  type="phone" id="phone" name="phone" placeholder="Enter phone number"required>
+             <br>
+            
+             <label for="country">Country 🧧</label>
+<input type="text" list="countries" id="country" name="country">
+         <datalist id="countries">
+            <option value="India">India</option>
+            <option value="aus">Austrlia</option>
+        </datalist>
+            <label for="subject">Feedback</label>
+            <textarea id="subject" name="subject" placeholder="Give us your valuable suggesstion" style="height:100px"></textarea>
+        
+            <center><input id="submitForm"type="submit" value="Submit"></center>
+          </form>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
